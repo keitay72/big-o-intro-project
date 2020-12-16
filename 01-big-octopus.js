@@ -30,5 +30,5 @@ tilesObj = {
   "left-up": 7
 }
 function fastDance(direction, tilesObj) {
-  // Code goes here ...
+  // Code goes here ....
 }
