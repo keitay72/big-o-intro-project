@@ -24,9 +24,15 @@ function quadraticBiggestFish(fishes) {
   
  tilesArray = ["up", "right-up", "right", "right-down", "down", "left-down", "left", "left-up"]
  function slowDance(direction, tilesArray) {
-   
+   for (let i = 0; i < tilesArray.length; i++) {
+     if (direction === tilesArray[i]) return i; 
+   }
+   return 'Thanks for playing!'
   }
 
+  // console.log(slowDance("up", tilesArray)); // 0
+  // console.log(slowDance("right-down", tilesArray)); // 3
+  
 tilesObj = {
   "up": 0,
   "right-up": 1,
@@ -37,6 +43,15 @@ tilesObj = {
   "left": 6,
   "left-up": 7
 }
-// function fastDance(direction, tilesObj) {
-//   // Code goes here ....
-// }
+function fastDance(direction, tilesObj) {
+  // for (let key in tilesObj) {
+  //   if (key === direction) {
+  //     return tilesObj[key];
+  //   }
+  // }
+  return tilesObj[direction];
+  // return 'Thanks for playing!'
+}
+
+console.log(fastDance("up", tilesObj)); // 0
+console.log(fastDance("right-down", tilesObj)); // 3
