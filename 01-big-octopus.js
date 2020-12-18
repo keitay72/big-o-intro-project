@@ -12,7 +12,7 @@ function quadraticBiggestFish(fishes) {
   return fishes[fishes.length - 1];
 }
 
- nlognBiggestFish = (fishes) => fishes.sort((a, b) => a.length - b.length)[fishes.length - 1]
+ nlognBiggestFish = (fishes) => fishes.sort((a, b) => a.length - b.length)[fishes.length - 1];
  
  function linearBiggestFish(fishes) {
    let largestFish = fishes[0]
